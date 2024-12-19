@@ -1,0 +1,27 @@
+Please respond thoroughly (at least two sentences for each question) to
+the following three questions.
+
+1. Describe an experience you had this semester where you saw the power of
+functions.
+espectially with define funtions. When I started to use this. 
+I fund that program can to more easy to be organizing and read, understand. 
+
+
+
+
+2. In your judgment, what is the value of test functions?
+to help you check if the program is work correct.
+
+
+
+3. Describe your process for troubleshooting and fixing a program that
+has a problem. What is one thing you can do to improve your process?
+In my program. 
+I try to avoid use if statement to comment python filter the my csv data this the input result.
+It can simplefy my code. but it dosen't work. 
+So I turn back the if statement and give the determine with numbers. (1 - Name, 2 - another_name)
+
+
+
+
+

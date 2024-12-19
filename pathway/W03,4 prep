@@ -1,0 +1,91 @@
+pi=3.14159
+print(pi)
+
+first_num=6
+second_num=2
+#加法(+)減法(-)乘法(*)除法(/)次方(**)
+print(first_num+second_num)
+print(first_num- second_num)
+print(first_num*second_num)
+print(first_num/second_num)
+print(first_num**second_num) 
+#直接打入數字算也是可行的
+#若想依序列出像是:62。用下面這個方法
+str_ftist_num=str(first_num)
+str_second_num=str(second_num)
+print(str_ftist_num+str_second_num)
+
+test_1=input('test_1:')
+test_2=input('test_2:')
+print(test_1+test_2)
+#如果用外部輸入python不會做運算，只會幫你依序列出，來看解決方法
+#int=整數相加/float=含小數點
+print(int(test_1)+int(test_2))
+print(float(test_1)+float(test_2))
+#str:用於帶入數字+詞/#int用於帶入數字運算
+print('====================================')
+
+#接下來是數字加上文字
+days_in_feb=28
+#print(days_in_feb+' days in February')
+#python 無法做出"數字"+"詞"，故要在底下加上"str"
+print(str(days_in_feb)+' days in February')
+#當然，不只有(str)可印出'文字+數字'
+#以下方法:
+number=7
+print(f"The number is {number}")
+print(f'The number is{number}')
+#(f'我是要印的字{我是要印的數字}')
+#(f'{}')
+#===========================================================================
+#==============WEEK 4=============
+#當然，不只有(str)可印出'文字+數字'
+number=7
+print(f'The number is {number}')
+#(f'我是要印的字{我是要印的數字}')
+#除了(f'我是要印的字{我是要印的數字}')這招以外，看以下
+print('The number is {}'.format(number))
+
+#以下為小數點四捨五入教學
+cars=3
+people=8
+people_per_car=people/cars
+#四捨五入到小數點第一位
+print(f'There are {people_per_car:.1f}people in each car')
+#印出:There are 2.7 people in each car.
+#四捨五入到小數點第二位
+print(f'There are {people_per_car:2f} people in each car')
+#印出:There are 2.67 people in each car.
+#四捨五入到小數點第三位
+print(f'There are {people_per_car:3f} people in each car')
+#印出:There are 2.667 people in each car.
+
+#應用在科學記號(e05=小數點往後五位)
+distance=9*1205*18
+#再科學記號前顯示3位
+print(f'the distance is: {distance:3e} meters.')
+#印出:the distance is: 1.952e+05 meters.
+#再科學記號前顯示6位
+print(f'the distance is: {distance:6e} meters.')
+#印出:the distance is: 1.9521000e+05 meters.
+
+#當你要印出很大的數字時:
+big_number=123456789
+print(f'The number is: {big_number}')
+#印出:The number is:123456789
+print(f'The number is: {big_number:,}')
+#印出:The number is:123,456,789
+print(f'The number is: {big_number:_}')
+#印出:The number is:123_456_789
+
+#數學應用#(import)是一種從"資料庫"調出功能的方法
+import math
+半徑=5
+面積=math.pi*(半徑**2)
+print(f'The area is: {面積}')
+#印出:The area is:78.5398163394483
+#介紹math.(指令)
+math.ceil(半徑)#讓(半徑)往上到下一個整數
+math.floor(半徑)#讓(半徑)往下到下一個整數
+math.exp(半徑)#讓(半徑)......
+math.sin(半徑)#讓(半徑).....
